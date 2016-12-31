@@ -1,5 +1,9 @@
 # React-Portal (lite)
 
+[![Travis](https://img.shields.io/travis/newyork-anthonyng/react-portal-lite.svg)](https://travis-ci.org/newyork-anthonyng/react-portal-lite)
+[![Codecov](https://img.shields.io/codecov/c/github/newyork-anthonyng/react-portal-lite.svg)](https://codecov.io/gh/newyork-anthonyng/react-portal-lite)
+[![license](https://img.shields.io/npm/l/react-portal-lite.svg)](https://spdx.org/licenses/MIT)
+
 A lightweight component that transports HTML elements to the end of `document.body`.
 
 ```javascript
