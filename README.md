@@ -14,9 +14,11 @@ $ npm install --save react-portal-lite
 
 ## Basic Usage
 ```javascript
-<Transport isOpen>
+import Portal from 'react-portal-lite';
+
+<Portal isOpen>
   <h1>Hello World</h1>
-</Transport>
+</Portal>
 
 // The H1 element will be appended to the end of document.body
 ```
