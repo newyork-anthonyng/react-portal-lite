@@ -1,7 +1,7 @@
 {
   "name": "react-portal-lite",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Transport React elements to document.body",
   "main": "build/portal.js",
   "scripts": {
     "commit": "git-cz",
@@ -10,7 +10,7 @@
     "cover": "npm run test -- --coverage",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "lint": "./node_modules/.bin/eslint lib/portal.js",
-    "build": "mkdir -p build && ./node_modules/.bin/babel ./lib/portal.js --output-file ./build/portal.js",
+    "build": "mkdir -p build && ./node_modules/.bin/babel ./lib/portal.js --out-file ./build/portal.js",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
