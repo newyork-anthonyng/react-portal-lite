@@ -1,6 +1,6 @@
 {
   "name": "react-portal-lite",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "build/portal.js",
   "scripts": {
@@ -8,9 +8,11 @@
     "test": "jest",
     "watch:test": "npm run test -- --watch",
     "cover": "npm run test -- --coverage",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "lint": "./node_modules/.bin/eslint lib/portal.js",
     "build": "mkdir -p build && babel ./lib/portal.js --output-file ./build/portal.js",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "react",
@@ -29,6 +31,7 @@
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "codecov.io": "^0.1.6",
     "commitizen": "^2.9.3",
     "cz-conventional-changelog": "^1.2.0",
     "enzyme": "^2.7.0",
@@ -40,6 +43,7 @@
     "ghooks": "^2.0.0",
     "jest": "^18.1.0",
     "react-addons-test-utils": "^15.4.1",
+    "semantic-release": "^6.3.2",
     "webpack": "^1.14.0"
   },
   "jest": {
@@ -62,5 +66,9 @@
     "ghooks": {
       "pre-commit": "npm run lint && npm run cover"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newyork-anthonyng/react-portal-lite.git"
   }
 }
